@@ -37,7 +37,7 @@ const HeroSection = () => {
           </h1>
 
           {/* Subheadline */}
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-up-delay leading-relaxed text-center px-0">We use advanced AI to sort post-consumer textiles at unprecedented speed and precision, unlocking supply of high quality feedstock for reuse and recycling</p>
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-up-delay leading-relaxed text-center px-px">We use advanced AI to sort post-consumer textiles at unprecedented speed and precision, unlocking supply of high quality feedstock for reuse and recycling</p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up-delay" style={{
