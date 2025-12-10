@@ -22,7 +22,7 @@ const HowItWorks = () => {
         <div className="text-center max-w-3xl mx-auto mb-16 md:mb-24">
           <span className="text-primary font-semibold text-sm uppercase tracking-wider">WHY WE DO IT</span>
           <h2 className="text-3xl md:text-5xl font-bold mt-4 mb-6">Our vision</h2>
-          <p className="text-lg text-muted-foreground">Textile waste is a plague. But when sorted</p>
+          <p className="text-lg text-muted-foreground">Textile waste is a plague. But once properly sorted it becomes a high value ressource that powers several industries</p>
         </div>
 
         {/* Steps */}
