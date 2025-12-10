@@ -4,42 +4,42 @@ import { Textarea } from "@/components/ui/textarea";
 import { Mail, Send, MapPin } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
-
 const ContactSection = () => {
-  const { toast } = useToast();
+  const {
+    toast
+  } = useToast();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     company: "",
-    message: "",
+    message: ""
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission
     await new Promise(resolve => setTimeout(resolve, 1000));
-    
     toast({
       title: "Message sent!",
-      description: "We'll get back to you as soon as possible.",
+      description: "We'll get back to you as soon as possible."
     });
-    
-    setFormData({ name: "", email: "", company: "", message: "" });
+    setFormData({
+      name: "",
+      email: "",
+      company: "",
+      message: ""
+    });
     setIsSubmitting(false);
   };
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData(prev => ({
       ...prev,
-      [e.target.name]: e.target.value,
+      [e.target.name]: e.target.value
     }));
   };
-
-  return (
-    <section id="contact" className="py-24 md:py-32 relative">
+  return <section id="contact" className="py-24 md:py-32 relative">
       <div className="container mx-auto px-4 md:px-6">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -62,30 +62,13 @@ const ContactSection = () => {
                   <label htmlFor="name" className="block text-sm font-medium mb-2">
                     Your name
                   </label>
-                  <Input
-                    id="name"
-                    name="name"
-                    placeholder="John Doe"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    className="bg-background"
-                  />
+                  <Input id="name" name="name" placeholder="John Doe" value={formData.name} onChange={handleChange} required className="bg-background" />
                 </div>
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium mb-2">
                     Email address
                   </label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
-                    placeholder="john@company.com"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className="bg-background"
-                  />
+                  <Input id="email" name="email" type="email" placeholder="john@company.com" value={formData.email} onChange={handleChange} required className="bg-background" />
                 </div>
               </div>
               
@@ -93,47 +76,21 @@ const ContactSection = () => {
                 <label htmlFor="company" className="block text-sm font-medium mb-2">
                   Company
                 </label>
-                <Input
-                  id="company"
-                  name="company"
-                  placeholder="Your company name"
-                  value={formData.company}
-                  onChange={handleChange}
-                  className="bg-background"
-                />
+                <Input id="company" name="company" placeholder="Your company name" value={formData.company} onChange={handleChange} className="bg-background" />
               </div>
               
               <div>
                 <label htmlFor="message" className="block text-sm font-medium mb-2">
                   Message
                 </label>
-                <Textarea
-                  id="message"
-                  name="message"
-                  placeholder="Tell us about your textile processing needs..."
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                  rows={5}
-                  className="bg-background resize-none"
-                />
+                <Textarea id="message" name="message" placeholder="Tell us about your textile processing needs..." value={formData.message} onChange={handleChange} required rows={5} className="bg-background resize-none" />
               </div>
               
-              <Button
-                type="submit"
-                variant="hero"
-                size="lg"
-                className="w-full"
-                disabled={isSubmitting}
-              >
-                {isSubmitting ? (
-                  "Sending..."
-                ) : (
-                  <>
+              <Button type="submit" variant="hero" size="lg" className="w-full" disabled={isSubmitting}>
+                {isSubmitting ? "Sending..." : <>
                     <Send className="w-4 h-4" />
                     Send message
-                  </>
-                )}
+                  </>}
               </Button>
             </form>
           </div>
@@ -149,10 +106,7 @@ const ContactSection = () => {
             </div>
 
             <div className="space-y-6">
-              <a
-                href="mailto:hello@clovis.tech"
-                className="flex items-center gap-4 p-4 rounded-xl bg-muted/50 hover:bg-muted transition-colors group"
-              >
+              <a href="mailto:hello@clovis.tech" className="flex items-center gap-4 p-4 rounded-xl bg-muted/50 hover:bg-muted transition-colors group">
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                   <Mail className="w-5 h-5 text-primary" />
                 </div>
@@ -174,17 +128,10 @@ const ContactSection = () => {
             </div>
 
             {/* Decorative element */}
-            <div className="pt-8">
-              <div className="inline-flex items-center gap-2 text-muted-foreground">
-                <div className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-                <span className="text-sm">We typically respond within 24 hours</span>
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ContactSection;
