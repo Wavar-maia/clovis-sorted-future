@@ -25,8 +25,8 @@ const ValueProposition = () => {
               <p className="text-muted-foreground mb-6 leading-relaxed">We produce a high-purity stream of reusable garments—over 90% wearable quality and 10% A grade quality. Traditional sorting centers receive pre-screened clothes worth sorting by hand, significantly boosting their efficiency and margins.</p>
               <div className="flex items-center gap-2 text-primary font-medium">
                 <TrendingUp className="w-5 h-5" />
-                <span>90%+ reuse purity 1
-0% cream or A grade</span>
+                <span>90%+ reuse purity 
+10% cream or A grade</span>
               </div>
             </div>
           </div>
