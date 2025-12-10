@@ -22,10 +22,11 @@ const ValueProposition = () => {
               </div>
               <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold mb-4">Sorting centers</span>
               <h3 className="text-2xl font-bold mb-4">Premium Reuse</h3>
-              <p className="text-muted-foreground mb-6 leading-relaxed">We extract a high-purity stream of reusable garments—over 90% wearable quality. Traditional sorting centers receive pre-screened clothes worth sorting by hand, significantly boosting their efficiency and margins.</p>
+              <p className="text-muted-foreground mb-6 leading-relaxed">We produce a high-purity stream of reusable garments—over 90% wearable quality and 10% A grade quality. Traditional sorting centers receive pre-screened clothes worth sorting by hand, significantly boosting their efficiency and margins.</p>
               <div className="flex items-center gap-2 text-primary font-medium">
                 <TrendingUp className="w-5 h-5" />
-                <span>90%+ reuse purity</span>
+                <span>90%+ reuse purity
+10% cream or A grade</span>
               </div>
             </div>
           </div>
@@ -39,14 +40,13 @@ const ValueProposition = () => {
               </div>
               <span className="inline-block px-3 py-1 rounded-full bg-secondary/10 text-secondary text-xs font-semibold mb-4">Recyclers</span>
               <h3 className="text-2xl font-bold mb-4">Recycling Feedstock</h3>
-              <p className="text-muted-foreground mb-6 leading-relaxed">
-                Everything else becomes affordable feedstock for textile-to-textile recycling, 
-                mechanical recycling, and other circular applications. Extracted at ultra-low 
-                cost, making recycling markets finally viable.
-              </p>
+              <p className="text-muted-foreground mb-6 leading-relaxed">We produce feedstock for textile-to-textile recycling, mechanical recycling, and other circular applications. 
+We produce large and predictable volumes at constant quality and low costs, making recycling markets finally viable.
+
+            </p>
               <div className="flex items-center gap-2 text-secondary font-medium">
                 <Zap className="w-5 h-5" />
-                <span>Ultra-low extraction cost</span>
+                <span>Large, predictable, affordable volumes</span>
               </div>
             </div>
           </div>
