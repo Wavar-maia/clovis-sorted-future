@@ -20,9 +20,7 @@ const ValueProposition = () => {
               <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
                 <Shirt className="w-8 h-8 text-primary" />
               </div>
-              <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold mb-4">
-                FRACTION 1
-              </span>
+              <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold mb-4">Sorting centers</span>
               <h3 className="text-2xl font-bold mb-4">Premium Reuse</h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">We extract a high-purity stream of reusable garments—over 90% wearable quality. Traditional sorting centers receive pre-screened clothes worth sorting by hand, significantly boosting their efficiency and margins.</p>
               <div className="flex items-center gap-2 text-primary font-medium">
@@ -39,9 +37,7 @@ const ValueProposition = () => {
               <div className="w-16 h-16 rounded-xl bg-secondary/10 flex items-center justify-center mb-6">
                 <Recycle className="w-8 h-8 text-secondary" />
               </div>
-              <span className="inline-block px-3 py-1 rounded-full bg-secondary/10 text-secondary text-xs font-semibold mb-4">
-                FRACTION 2
-              </span>
+              <span className="inline-block px-3 py-1 rounded-full bg-secondary/10 text-secondary text-xs font-semibold mb-4">Recyclers</span>
               <h3 className="text-2xl font-bold mb-4">Recycling Feedstock</h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 Everything else becomes affordable feedstock for textile-to-textile recycling, 
