@@ -37,7 +37,7 @@ const HeroSection = () => {
           </h1>
 
           {/* Subheadline */}
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-up-delay leading-relaxed">We use advanced AI to sort post-consumer textiles at unprecedented speed and precision, unlocking supply at scale of high quality feedstock for reuse and recycling</p>
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-up-delay leading-relaxed text-center px-[30px]">We use advanced AI to sort post-consumer textiles at unprecedented speed and precision, unlocking supply at scale of high quality feedstock for reuse and recycling</p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up-delay" style={{
@@ -59,13 +59,10 @@ const HeroSection = () => {
               <div className="text-3xl md:text-4xl font-bold text-gradient">90%+</div>
               <div className="text-sm text-muted-foreground mt-1">Reuse purity</div>
             </div>
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-gradient">10x</div>
-              <div className="text-sm text-muted-foreground mt-1">Faster sortig</div>
-            </div>
+            
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-gradient">−70%</div>
-              <div className="text-sm text-muted-foreground mt-1">Sorting costs</div>
+              <div className="text-sm text-muted-foreground mt-1">large, constant, predictable supply</div>
             </div>
           </div>
         </div>

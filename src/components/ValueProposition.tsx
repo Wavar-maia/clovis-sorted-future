@@ -8,10 +8,7 @@ const ValueProposition = () => {
           <h2 className="text-3xl md:text-5xl font-bold mt-4 mb-6">
             Two streams, maximum value
           </h2>
-          <p className="text-lg text-muted-foreground">
-            Our AI technology identifies and separates textiles into two optimized fractions, 
-            each tailored for its highest-value destination.
-          </p>
+          <p className="text-lg text-muted-foreground">We provide sorting centers and recyclers with high quality feedstock for their needs. Building the foundation of a new industry where textile waste is a valuable raw material.</p>
         </div>
 
         {/* Two Fractions */}
