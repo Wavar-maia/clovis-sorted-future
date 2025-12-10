@@ -8,7 +8,7 @@ const ValueProposition = () => {
           <h2 className="text-3xl md:text-5xl font-bold mt-4 mb-6">
             Two streams, maximum value
           </h2>
-          <p className="text-lg text-muted-foreground">We provide sorting centers and recyclers with high quality feedstock for their needs. Building the foundation of a new industry where textile waste is a valuable raw material.</p>
+          <p className="text-lg text-muted-foreground">We provide sorting centers and recyclers with high quality feedstock for their needs. Building the foundation of a new industry where textile waste is a valuable raw material available at scale</p>
         </div>
 
         {/* Two Fractions */}
@@ -25,7 +25,7 @@ const ValueProposition = () => {
               <p className="text-muted-foreground mb-6 leading-relaxed">We produce a high-purity stream of reusable garments—over 90% wearable quality and 10% A grade quality. Traditional sorting centers receive pre-screened clothes worth sorting by hand, significantly boosting their efficiency and margins.</p>
               <div className="flex items-center gap-2 text-primary font-medium">
                 <TrendingUp className="w-5 h-5" />
-                <span>90%+ reuse purity
+                <span>90%+ reuse purity 
 10% cream or A grade</span>
               </div>
             </div>
@@ -56,8 +56,7 @@ We produce large and predictable volumes at constant quality and low costs, maki
         <div className="mt-16 md:mt-24 text-center">
           <div className="inline-flex items-center gap-3 px-6 py-4 rounded-2xl bg-muted/50 border border-border/50">
             <div className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-            <span className="text-muted-foreground">
-              Together, these fractions ensure <strong className="text-foreground">zero wasted potential</strong> in every textile batch.
+            <span className="text-muted-foreground">We adapt our production to every order, depending on quality / quantity / items requested<strong className="text-foreground">zero wasted potential</strong> in every textile batch.
             </span>
           </div>
         </div>
