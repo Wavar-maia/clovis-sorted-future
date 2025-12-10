@@ -1,7 +1,7 @@
 import { Recycle, Shirt, Zap, TrendingUp } from "lucide-react";
 const ValueProposition = () => {
   return <section id="what-we-do" className="py-24 md:py-32 relative">
-      <div className="container mx-auto px-4 md:px-6">
+      <div className="container mx-auto md:px-6 px-[20px]">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 md:mb-24">
           <span className="text-primary font-semibold text-sm uppercase tracking-wider">What we do</span>
