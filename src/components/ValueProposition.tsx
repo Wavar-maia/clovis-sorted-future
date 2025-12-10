@@ -1,8 +1,6 @@
 import { Recycle, Shirt, Zap, TrendingUp } from "lucide-react";
-
 const ValueProposition = () => {
-  return (
-    <section id="what-we-do" className="py-24 md:py-32 relative">
+  return <section id="what-we-do" className="py-24 md:py-32 relative">
       <div className="container mx-auto px-4 md:px-6">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 md:mb-24">
@@ -29,11 +27,7 @@ const ValueProposition = () => {
                 FRACTION 1
               </span>
               <h3 className="text-2xl font-bold mb-4">Premium Reuse</h3>
-              <p className="text-muted-foreground mb-6 leading-relaxed">
-                We extract a high-purity stream of reusable garments—over 90% wearable quality. 
-                Traditional sorting centers receive pre-screened clothes worth sorting by hand, 
-                significantly boosting their efficiency.
-              </p>
+              <p className="text-muted-foreground mb-6 leading-relaxed">We extract a high-purity stream of reusable garments—over 90% wearable quality. Traditional sorting centers receive pre-screened clothes worth sorting by hand, significantly boosting their efficiency and margins.</p>
               <div className="flex items-center gap-2 text-primary font-medium">
                 <TrendingUp className="w-5 h-5" />
                 <span>90%+ reuse purity</span>
@@ -75,8 +69,6 @@ const ValueProposition = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ValueProposition;
