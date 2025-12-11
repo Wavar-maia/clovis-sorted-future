@@ -61,7 +61,8 @@ const HeroSection = () => {
             </div>
             
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-gradient">−70%</div>
+              <div className="text-3xl md:text-4xl font-bold text-gradient">
+            </div>
               <div className="text-sm text-muted-foreground mt-1">large, constant, predictable supply</div>
             </div>
           </div>
