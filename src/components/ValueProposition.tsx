@@ -1,6 +1,5 @@
 const ValueProposition = () => {
-  return (
-    <section id="what-we-do" className="py-24 md:py-32 relative">
+  return <section id="what-we-do" className="py-24 md:py-32 relative">
       <div className="container mx-auto px-4 md:px-6">
         {/* Section Header */}
         <div className="max-w-3xl mb-24 md:mb-32">
@@ -25,22 +24,19 @@ const ValueProposition = () => {
             </p>
             <div className="flex items-center gap-3">
               <div className="w-2 h-2 rounded-full bg-foreground" />
-              <span className="text-foreground font-medium">90%+ reuse purity · 10% cream or A grade</span>
+              <span className="text-foreground font-medium">90%+ reuse purity · 
+10% cream or A grade</span>
             </div>
           </div>
           <div className="order-1 lg:order-2">
-            <div className="aspect-[4/3] rounded-2xl bg-secondary/50 border border-border/50 flex items-center justify-center">
-              <span className="text-muted-foreground text-sm">Image placeholder</span>
-            </div>
+            
           </div>
         </div>
 
         {/* Recyclers Section */}
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div>
-            <div className="aspect-[4/3] rounded-2xl bg-accent/30 border border-border/50 flex items-center justify-center">
-              <span className="text-muted-foreground text-sm">Image placeholder</span>
-            </div>
+            
           </div>
           <div>
             <span className="inline-block px-4 py-1.5 rounded-full bg-accent text-accent-foreground text-xs font-semibold mb-6">
@@ -57,8 +53,6 @@ const ValueProposition = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ValueProposition;
