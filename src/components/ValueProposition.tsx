@@ -56,7 +56,7 @@ We produce large and predictable volumes at constant quality and low costs, maki
         <div className="mt-16 md:mt-24 text-center">
           <div className="inline-flex items-center gap-3 px-6 py-4 rounded-2xl bg-muted/50 border border-border/50">
             <div className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-            <span className="text-muted-foreground">We adapt our production to every order, depending on quality / quantity / items requested in every textile batch.<strong className="text-foreground">zero wasted potential</strong> in every textile batch.
+            <span className="text-muted-foreground">We adapt our production to every order, depending on quality / quantity / items requested every textile batch.<strong className="text-foreground">zero wasted potential</strong> in every textile batch.
             </span>
           </div>
         </div>
