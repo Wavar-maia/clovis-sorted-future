@@ -1,15 +1,15 @@
 const visionCards = [
   {
-    title: "Circularity at scale",
-    description: "We believe textile waste isn't waste at all—it's untapped value. By sorting at industrial scale, we're building the infrastructure that makes textile circularity economically viable for the first time."
+    title: "Keep clothes in circulation",
+    description: "Graders and sorters face growing volumes with decreasing reusable quality. We provide them with pre-selected reusable clothes only, enabling them to scale operations and increase their margins."
   },
   {
-    title: "Technology meets tradition",
-    description: "Advanced AI and automation don't replace human expertise—they amplify it. We partner with traditional sorting centers to give them the tools they need to thrive in a circular economy."
+    title: "Make Europe a producer of cotton and plastic",
+    description: "Where others see piles of clothes, we see untapped reserves of natural fibers and plastic. We unlock large quantities of cotton and synthetic resources present on European soil—resources that remain unexploited until now."
   },
   {
-    title: "A new raw material",
-    description: "Post-consumer textiles are the new cotton, the new polyester. We're creating reliable supply chains that treat recycled materials with the same respect as virgin resources."
+    title: "Process textile waste where it's produced",
+    description: "We envision a world where all textile waste is processed locally. By unlocking volumes, we enable collection to scale up and give the industry the capacity to absorb everything that's discarded."
   }
 ];
 
