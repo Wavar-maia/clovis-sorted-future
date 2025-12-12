@@ -36,10 +36,10 @@
 
     --radius: 0.75rem;
 
-    /* Vision card colors - painterly */
-    --vision-1: 80 40% 55%;
-    --vision-2: 200 35% 45%;
-    --vision-3: 340 35% 60%;
+    /* Mission card colors - muted pastels like Anthropic */
+    --vision-1: 35 30% 82%;
+    --vision-2: 160 25% 78%;
+    --vision-3: 260 25% 82%;
 
     /* Shadows */
     --shadow-soft: 0 4px 20px -4px hsl(0 0% 5% / 0.06);
