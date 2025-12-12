@@ -74,28 +74,28 @@ const ValueProposition = () => {
           </p>
         </div>
 
-        {/* Sorting Centers Section */}
+        {/* Sorting Centers Section - Always side by side */}
         <div 
           ref={sortingRef}
-          className={`grid lg:grid-cols-2 gap-16 lg:gap-24 items-center mb-32 md:mb-40 max-w-5xl mx-auto transition-all duration-1000 ${
+          className={`flex flex-row gap-6 sm:gap-8 md:gap-16 lg:gap-24 items-center mb-32 md:mb-40 max-w-5xl mx-auto px-2 sm:px-4 md:px-8 transition-all duration-1000 ${
             sortingVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
         >
-          <div className="order-2 lg:order-1 lg:pr-8">
-            <span className="inline-block px-4 py-1.5 rounded-full bg-secondary text-foreground text-xs font-medium mb-6">
+          <div className="flex-1 min-w-0 pr-2 sm:pr-4 md:pr-8">
+            <span className="inline-block px-3 sm:px-4 py-1.5 rounded-full bg-secondary text-foreground text-xs font-medium mb-4 sm:mb-6">
               Reuse fraction
             </span>
-            <h3 className="text-2xl md:text-4xl font-semibold mb-6 text-foreground">Sorting centers</h3>
-            <p className="text-foreground/70 text-lg leading-relaxed mb-6 font-light">
+            <h3 className="text-xl sm:text-2xl md:text-4xl font-semibold mb-4 sm:mb-6 text-foreground">Sorting centers</h3>
+            <p className="text-foreground/70 text-sm sm:text-base md:text-lg leading-relaxed mb-4 sm:mb-6 font-light">
               We produce a high-purity stream of reusable garments—over 90% wearable quality and 10% A grade quality. Traditional sorting centers receive pre-screened clothes worth sorting by hand, significantly boosting their efficiency and margins.
             </p>
-            <div className="flex items-center gap-3">
-              <div className="w-2 h-2 rounded-full bg-foreground" />
-              <span className="text-foreground font-medium">90%+ reuse purity · 10% cream or A grade</span>
+            <div className="flex items-center gap-2 sm:gap-3">
+              <div className="w-1.5 sm:w-2 h-1.5 sm:h-2 rounded-full bg-foreground" />
+              <span className="text-foreground font-medium text-xs sm:text-sm md:text-base">90%+ reuse purity · 10% cream or A grade</span>
             </div>
           </div>
-          <div className="order-1 lg:order-2">
-            <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-card max-w-md ml-auto">
+          <div className="flex-shrink-0 w-[30%] sm:w-[35%] md:w-2/5">
+            <div className="aspect-[4/3] rounded-xl sm:rounded-2xl overflow-hidden shadow-card">
               <img 
                 src={sortingCenterImg} 
                 alt="Textile sorting center with workers sorting clothes on conveyor belt" 
@@ -105,15 +105,15 @@ const ValueProposition = () => {
           </div>
         </div>
 
-        {/* Recyclers Section */}
+        {/* Recyclers Section - Always side by side */}
         <div 
           ref={recyclersRef}
-          className={`grid lg:grid-cols-2 gap-16 lg:gap-24 items-center max-w-5xl mx-auto transition-all duration-1000 ${
+          className={`flex flex-row gap-6 sm:gap-8 md:gap-16 lg:gap-24 items-center max-w-5xl mx-auto px-2 sm:px-4 md:px-8 transition-all duration-1000 ${
             recyclersVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
         >
-          <div>
-            <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-card max-w-md">
+          <div className="flex-shrink-0 w-[30%] sm:w-[35%] md:w-2/5">
+            <div className="aspect-[4/3] rounded-xl sm:rounded-2xl overflow-hidden shadow-card">
               <img 
                 src={recyclingFeedstockImg} 
                 alt="Textile recycling feedstock - processed white textile fibers" 
@@ -121,17 +121,17 @@ const ValueProposition = () => {
               />
             </div>
           </div>
-          <div className="lg:pl-8">
-            <span className="inline-block px-4 py-1.5 rounded-full bg-accent/50 text-foreground text-xs font-medium mb-6">
+          <div className="flex-1 min-w-0 pl-2 sm:pl-4 md:pl-8">
+            <span className="inline-block px-3 sm:px-4 py-1.5 rounded-full bg-accent/50 text-foreground text-xs font-medium mb-4 sm:mb-6">
               Recycling feedstock
             </span>
-            <h3 className="text-2xl md:text-4xl font-semibold mb-6 text-foreground">Recyclers</h3>
-            <p className="text-foreground/70 text-lg leading-relaxed mb-6 font-light">
+            <h3 className="text-xl sm:text-2xl md:text-4xl font-semibold mb-4 sm:mb-6 text-foreground">Recyclers</h3>
+            <p className="text-foreground/70 text-sm sm:text-base md:text-lg leading-relaxed mb-4 sm:mb-6 font-light">
               We produce feedstock for textile-to-textile recycling, mechanical recycling, and other circular applications. We produce large and predictable volumes at constant quality and low costs, making recycling markets finally viable.
             </p>
-            <div className="flex items-center gap-3">
-              <div className="w-2 h-2 rounded-full bg-foreground" />
-              <span className="text-foreground font-medium">Large, predictable, affordable volumes</span>
+            <div className="flex items-center gap-2 sm:gap-3">
+              <div className="w-1.5 sm:w-2 h-1.5 sm:h-2 rounded-full bg-foreground" />
+              <span className="text-foreground font-medium text-xs sm:text-sm md:text-base">Large, predictable, affordable volumes</span>
             </div>
           </div>
         </div>
