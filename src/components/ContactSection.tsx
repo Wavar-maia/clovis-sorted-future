@@ -40,25 +40,26 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-24 md:py-32 relative bg-muted/30">
+    <section id="contact" className="py-16 md:py-24 relative bg-muted/30">
       <div className="container mx-auto px-4 md:px-6">
-        {/* Section Header */}
-        <div className="max-w-3xl mb-16">
+        {/* Section Header - Centered */}
+        <div className="max-w-3xl mx-auto text-center mb-16">
           <span className="text-muted-foreground font-medium text-sm uppercase tracking-wider mb-4 block">
             Contact
           </span>
           <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
             Let's work together
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Ready to transform your textile waste into circular value? Get in
             touch and let's discuss how Clovis can help.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 max-w-5xl">
+        <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
           {/* Contact Form */}
           <div className="bg-card rounded-2xl p-8 md:p-10 shadow-card border border-border/50">
+            <h3 className="text-xl font-semibold mb-6 text-center">Send a message</h3>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
@@ -142,36 +143,36 @@ const ContactSection = () => {
           </div>
 
           {/* Contact Info */}
-          <div className="flex flex-col justify-center space-y-8">
-            <div>
-              <h3 className="text-2xl font-bold mb-4">Or reach us directly</h3>
-              <p className="text-muted-foreground">
+          <div className="flex flex-col justify-center">
+            <div className="bg-card rounded-2xl p-8 md:p-10 shadow-card border border-border/50">
+              <h3 className="text-xl font-semibold mb-6 text-center">Reach us directly</h3>
+              <p className="text-muted-foreground text-center mb-8">
                 We're always happy to chat about textile circularity, sorting
                 technology, or potential partnerships.
               </p>
-            </div>
 
-            <div className="space-y-4">
-              <a
-                href="mailto:hello@clovis.tech"
-                className="flex items-center gap-4 p-4 rounded-xl bg-card border border-border/50 hover:border-border transition-colors group"
-              >
-                <div className="w-12 h-12 rounded-xl bg-muted flex items-center justify-center">
-                  <Mail className="w-5 h-5 text-foreground" />
-                </div>
-                <div>
-                  <div className="text-sm text-muted-foreground">Email us at</div>
-                  <div className="font-semibold text-foreground">hello@clovis.tech</div>
-                </div>
-              </a>
+              <div className="space-y-4">
+                <a
+                  href="mailto:hello@clovis.tech"
+                  className="flex items-center gap-4 p-4 rounded-xl bg-background border border-border/50 hover:border-border transition-colors group"
+                >
+                  <div className="w-12 h-12 rounded-xl bg-muted flex items-center justify-center">
+                    <Mail className="w-5 h-5 text-foreground" />
+                  </div>
+                  <div>
+                    <div className="text-sm text-muted-foreground">Email us at</div>
+                    <div className="font-semibold text-foreground">hello@clovis.tech</div>
+                  </div>
+                </a>
 
-              <div className="flex items-center gap-4 p-4 rounded-xl bg-card border border-border/50">
-                <div className="w-12 h-12 rounded-xl bg-muted flex items-center justify-center">
-                  <MapPin className="w-5 h-5 text-foreground" />
-                </div>
-                <div>
-                  <div className="text-sm text-muted-foreground">Based in</div>
-                  <div className="font-semibold text-foreground">Paris, France</div>
+                <div className="flex items-center gap-4 p-4 rounded-xl bg-background border border-border/50">
+                  <div className="w-12 h-12 rounded-xl bg-muted flex items-center justify-center">
+                    <MapPin className="w-5 h-5 text-foreground" />
+                  </div>
+                  <div>
+                    <div className="text-sm text-muted-foreground">Based in</div>
+                    <div className="font-semibold text-foreground">Paris, France</div>
+                  </div>
                 </div>
               </div>
             </div>

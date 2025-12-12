@@ -4,7 +4,11 @@ import recyclingFeedstockImg from "@/assets/recycling-feedstock.jpg";
 
 const ValueProposition = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [sortingVisible, setSortingVisible] = useState(false);
+  const [recyclersVisible, setRecyclersVisible] = useState(false);
   const headerRef = useRef<HTMLDivElement>(null);
+  const sortingRef = useRef<HTMLDivElement>(null);
+  const recyclersRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -16,11 +20,39 @@ const ValueProposition = () => {
       { threshold: 0.3 }
     );
 
+    const sortingObserver = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setSortingVisible(true);
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    const recyclersObserver = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setRecyclersVisible(true);
+        }
+      },
+      { threshold: 0.2 }
+    );
+
     if (headerRef.current) {
       observer.observe(headerRef.current);
     }
+    if (sortingRef.current) {
+      sortingObserver.observe(sortingRef.current);
+    }
+    if (recyclersRef.current) {
+      recyclersObserver.observe(recyclersRef.current);
+    }
 
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+      sortingObserver.disconnect();
+      recyclersObserver.disconnect();
+    };
   }, []);
 
   return (
@@ -43,7 +75,12 @@ const ValueProposition = () => {
         </div>
 
         {/* Sorting Centers Section */}
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center mb-32 md:mb-40 max-w-6xl mx-auto">
+        <div 
+          ref={sortingRef}
+          className={`grid lg:grid-cols-2 gap-16 lg:gap-24 items-center mb-32 md:mb-40 max-w-5xl mx-auto transition-all duration-1000 ${
+            sortingVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+          }`}
+        >
           <div className="order-2 lg:order-1 lg:pr-8">
             <span className="inline-block px-4 py-1.5 rounded-full bg-secondary text-foreground text-xs font-medium mb-6">
               Reuse fraction
@@ -58,7 +95,7 @@ const ValueProposition = () => {
             </div>
           </div>
           <div className="order-1 lg:order-2">
-            <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-card">
+            <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-card max-w-md ml-auto">
               <img 
                 src={sortingCenterImg} 
                 alt="Textile sorting center with workers sorting clothes on conveyor belt" 
@@ -69,9 +106,14 @@ const ValueProposition = () => {
         </div>
 
         {/* Recyclers Section */}
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center max-w-6xl mx-auto">
+        <div 
+          ref={recyclersRef}
+          className={`grid lg:grid-cols-2 gap-16 lg:gap-24 items-center max-w-5xl mx-auto transition-all duration-1000 ${
+            recyclersVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+          }`}
+        >
           <div>
-            <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-card">
+            <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-card max-w-md">
               <img 
                 src={recyclingFeedstockImg} 
                 alt="Textile recycling feedstock - processed white textile fibers" 
