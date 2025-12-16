@@ -41,6 +41,9 @@
     --vision-2: 160 25% 78%;
     --vision-3: 260 25% 82%;
 
+    /* Blue background for main sections */
+    --section-blue: 196 68% 45%;
+
     /* Shadows */
     --shadow-soft: 0 4px 20px -4px hsl(0 0% 5% / 0.06);
     --shadow-card: 0 8px 30px -8px hsl(0 0% 5% / 0.08);
