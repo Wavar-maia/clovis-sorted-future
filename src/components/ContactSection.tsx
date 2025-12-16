@@ -37,17 +37,17 @@ const ContactSection = () => {
       [e.target.name]: e.target.value
     }));
   };
-  return <section id="contact" className="py-16 md:py-24 relative bg-[hsl(var(--section-blue))]">
+  return <section id="contact" className="py-16 md:py-24 relative bg-muted/30">
       <div className="container mx-auto px-4 md:px-6">
         {/* Section Header - Centered */}
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <span className="text-white/60 font-medium text-sm uppercase tracking-wider mb-4 block">
+          <span className="text-muted-foreground font-medium text-sm uppercase tracking-wider mb-4 block">
             Contact
           </span>
-          <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight text-white">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
             Let's work together
           </h2>
-          <p className="text-lg text-white/70 max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Ready to transform your textile waste into circular value? Get in
             touch and let's discuss how Clovis can help.
           </p>

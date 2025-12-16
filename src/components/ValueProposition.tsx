@@ -56,7 +56,7 @@ const ValueProposition = () => {
   }, []);
 
   return (
-    <section id="what-we-do" className="py-24 md:py-32 relative bg-[hsl(var(--section-blue))]">
+    <section id="what-we-do" className="py-24 md:py-32 relative">
       <div className="container mx-auto px-4 md:px-6">
         {/* Section Header - Centered with fade animation */}
         <div 
@@ -65,11 +65,11 @@ const ValueProposition = () => {
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
         >
-          <span className="text-white/60 font-medium text-sm uppercase tracking-wider mb-4 block">What we do</span>
-          <h2 className="text-3xl md:text-5xl font-semibold mb-6 leading-tight text-white">
+          <span className="text-foreground/60 font-medium text-sm uppercase tracking-wider mb-4 block">What we do</span>
+          <h2 className="text-3xl md:text-5xl font-semibold mb-6 leading-tight text-foreground">
             Two streams, maximum value
           </h2>
-          <p className="text-lg text-white/70 max-w-2xl mx-auto font-light">
+          <p className="text-lg text-foreground/70 max-w-2xl mx-auto font-light">
             We provide sorting centers and recyclers with high quality feedstock for their needs. Building the foundation of a new industry where textile waste is a valuable raw material available at scale.
           </p>
         </div>
@@ -82,16 +82,16 @@ const ValueProposition = () => {
           }`}
         >
           <div className="flex-1 min-w-0 pr-2 sm:pr-4 md:pr-8">
-            <span className="inline-block px-3 sm:px-4 py-1.5 rounded-full bg-white/20 text-white text-xs font-medium mb-4 sm:mb-6">
+            <span className="inline-block px-3 sm:px-4 py-1.5 rounded-full bg-secondary text-foreground text-xs font-medium mb-4 sm:mb-6">
               Reuse fraction
             </span>
-            <h3 className="text-xl sm:text-2xl md:text-4xl font-semibold mb-4 sm:mb-6 text-white">Sorting centers</h3>
-            <p className="text-white/70 text-sm sm:text-base md:text-lg leading-relaxed mb-4 sm:mb-6 font-light">
+            <h3 className="text-xl sm:text-2xl md:text-4xl font-semibold mb-4 sm:mb-6 text-foreground">Sorting centers</h3>
+            <p className="text-foreground/70 text-sm sm:text-base md:text-lg leading-relaxed mb-4 sm:mb-6 font-light">
               We produce a high-purity stream of reusable garments—over 90% wearable quality and 10% A grade quality. Traditional sorting centers receive pre-screened clothes worth sorting by hand, significantly boosting their efficiency and margins.
             </p>
             <div className="flex items-center gap-2 sm:gap-3">
-              <div className="w-1.5 sm:w-2 h-1.5 sm:h-2 rounded-full bg-white" />
-              <span className="text-white font-medium text-xs sm:text-sm md:text-base">90%+ reuse purity · 10% cream or A grade</span>
+              <div className="w-1.5 sm:w-2 h-1.5 sm:h-2 rounded-full bg-foreground" />
+              <span className="text-foreground font-medium text-xs sm:text-sm md:text-base">90%+ reuse purity · 10% cream or A grade</span>
             </div>
           </div>
           <div className="flex-shrink-0 w-[30%] sm:w-[35%] md:w-2/5">
@@ -122,16 +122,16 @@ const ValueProposition = () => {
             </div>
           </div>
           <div className="flex-1 min-w-0 pl-2 sm:pl-4 md:pl-8">
-            <span className="inline-block px-3 sm:px-4 py-1.5 rounded-full bg-white/20 text-white text-xs font-medium mb-4 sm:mb-6">
+            <span className="inline-block px-3 sm:px-4 py-1.5 rounded-full bg-accent/50 text-foreground text-xs font-medium mb-4 sm:mb-6">
               Recycling feedstock
             </span>
-            <h3 className="text-xl sm:text-2xl md:text-4xl font-semibold mb-4 sm:mb-6 text-white">Recyclers</h3>
-            <p className="text-white/70 text-sm sm:text-base md:text-lg leading-relaxed mb-4 sm:mb-6 font-light">
+            <h3 className="text-xl sm:text-2xl md:text-4xl font-semibold mb-4 sm:mb-6 text-foreground">Recyclers</h3>
+            <p className="text-foreground/70 text-sm sm:text-base md:text-lg leading-relaxed mb-4 sm:mb-6 font-light">
               We produce feedstock for textile-to-textile recycling, mechanical recycling, and other circular applications. We produce large and predictable volumes at constant quality and low costs, making recycling markets finally viable.
             </p>
             <div className="flex items-center gap-2 sm:gap-3">
-              <div className="w-1.5 sm:w-2 h-1.5 sm:h-2 rounded-full bg-white" />
-              <span className="text-white font-medium text-xs sm:text-sm md:text-base">Large, predictable, affordable volumes</span>
+              <div className="w-1.5 sm:w-2 h-1.5 sm:h-2 rounded-full bg-foreground" />
+              <span className="text-foreground font-medium text-xs sm:text-sm md:text-base">Large, predictable, affordable volumes</span>
             </div>
           </div>
         </div>

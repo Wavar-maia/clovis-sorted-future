@@ -38,12 +38,12 @@ const OurMission = () => {
   };
 
   return (
-    <section id="our-mission" className="py-24 md:py-32 relative bg-[hsl(var(--section-blue))]">
+    <section id="our-mission" className="py-24 md:py-32 relative">
       <div className="container mx-auto px-4 md:px-6">
         {/* Section Header */}
         <div className="max-w-3xl mb-16">
-          <span className="text-white/60 font-medium text-sm uppercase tracking-wider mb-4 block">Our mission</span>
-          <h2 className="text-3xl md:text-5xl font-semibold mb-6 leading-tight text-white">Our mission</h2>
+          <span className="text-foreground/60 font-medium text-sm uppercase tracking-wider mb-4 block">Our mission</span>
+          <h2 className="text-3xl md:text-5xl font-semibold mb-6 leading-tight text-foreground">Our mission</h2>
         </div>
 
         {/* Stacked Cards Container */}
@@ -116,10 +116,10 @@ const OurMission = () => {
         <div className="flex justify-center items-center gap-6 mt-8">
           <button
             onClick={goToPrevious}
-            className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-colors"
+            className="w-12 h-12 rounded-full border border-foreground/20 flex items-center justify-center hover:bg-foreground/5 transition-colors"
             aria-label="Previous card"
           >
-            <ChevronLeft className="w-5 h-5 text-white" />
+            <ChevronLeft className="w-5 h-5 text-foreground" />
           </button>
           
           {/* Dots indicator */}
@@ -129,7 +129,7 @@ const OurMission = () => {
                 key={index}
                 onClick={() => setCurrentIndex(index)}
                 className={`w-2 h-2 rounded-full transition-colors ${
-                  index === currentIndex ? 'bg-white' : 'bg-white/30'
+                  index === currentIndex ? 'bg-foreground' : 'bg-foreground/30'
                 }`}
                 aria-label={`Go to card ${index + 1}`}
               />
@@ -138,10 +138,10 @@ const OurMission = () => {
           
           <button
             onClick={goToNext}
-            className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-colors"
+            className="w-12 h-12 rounded-full border border-foreground/20 flex items-center justify-center hover:bg-foreground/5 transition-colors"
             aria-label="Next card"
           >
-            <ChevronRight className="w-5 h-5 text-white" />
+            <ChevronRight className="w-5 h-5 text-foreground" />
           </button>
         </div>
       </div>
