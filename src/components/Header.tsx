@@ -18,7 +18,8 @@ const Header = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <a href="/" className="flex items-center">
+          <a href="/" className="flex items-center gap-2">
+            <img src="/logo-clovis.png" alt="Clovis logo" className="h-8 w-8" />
             <span className="text-2xl font-bold text-foreground tracking-tight">Clovis</span>
           </a>
 
