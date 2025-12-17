@@ -3,39 +3,12 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Send, MapPin } from "lucide-react";
 import { useState } from "react";
-import { useToast } from "@/hooks/use-toast";
+
 const ContactSection = () => {
-  const {
-    toast
-  } = useToast();
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    company: "",
-    message: ""
-  });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
+
+  const handleSubmit = () => {
     setIsSubmitting(true);
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    toast({
-      title: "Message sent!",
-      description: "We'll get back to you as soon as possible."
-    });
-    setFormData({
-      name: "",
-      email: "",
-      company: "",
-      message: ""
-    });
-    setIsSubmitting(false);
-  };
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData(prev => ({
-      ...prev,
-      [e.target.name]: e.target.value
-    }));
   };
   return <section id="contact" className="py-16 md:py-24 relative bg-muted/30">
       <div className="container mx-auto px-4 md:px-6">
@@ -76,13 +49,13 @@ const ContactSection = () => {
                   <label htmlFor="name" className="block text-sm font-medium mb-2">
                     Your name
                   </label>
-                  <Input id="name" name="name" placeholder="John Doe" value={formData.name} onChange={handleChange} required className="bg-background" />
+                  <Input id="name" name="name" placeholder="John Doe" required className="bg-background" />
                 </div>
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium mb-2">
                     Email address
                   </label>
-                  <Input id="email" name="email" type="email" placeholder="john@company.com" value={formData.email} onChange={handleChange} required className="bg-background" />
+                  <Input id="email" name="email" type="email" placeholder="john@company.com" required className="bg-background" />
                 </div>
               </div>
 
@@ -90,14 +63,14 @@ const ContactSection = () => {
                 <label htmlFor="company" className="block text-sm font-medium mb-2">
                   Company
                 </label>
-                <Input id="company" name="company" placeholder="Your company name" value={formData.company} onChange={handleChange} className="bg-background" />
+                <Input id="company" name="company" placeholder="Your company name" className="bg-background" />
               </div>
 
               <div>
                 <label htmlFor="message" className="block text-sm font-medium mb-2">
                   Message
                 </label>
-                <Textarea id="message" name="message" placeholder="Tell us about your textile processing needs..." value={formData.message} onChange={handleChange} required rows={5} className="bg-background resize-none" />
+                <Textarea id="message" name="message" placeholder="Tell us about your textile processing needs..." required rows={5} className="bg-background resize-none" />
               </div>
 
               <Button type="submit" variant="default" size="lg" className="w-full rounded-full" disabled={isSubmitting}>
