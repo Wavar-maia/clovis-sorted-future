@@ -7,10 +7,13 @@ import { useState } from "react";
 const ContactSection = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
     setIsSubmitting(true);
+    // Ne pas empêcher la soumission naturelle du formulaire
   };
-  return <section id="contact" className="py-16 md:py-24 relative bg-muted/30">
+
+  return (
+    <section id="contact" className="py-16 md:py-24 relative bg-muted/30">
       <div className="container mx-auto px-4 md:px-6">
         {/* Section Header - Centered */}
         <div className="max-w-3xl mx-auto text-center mb-16">
@@ -30,12 +33,13 @@ const ContactSection = () => {
           {/* Contact Form */}
           <div className="bg-card rounded-2xl p-8 md:p-10 shadow-card border border-border/50">
             <h3 className="text-xl font-semibold mb-6 text-center">Send a message</h3>
-            <form 
-              name="contact" 
-              method="POST" 
-              data-netlify="true" 
+            <form
+              name="contact"
+              method="POST"
+              action="/success"
+              data-netlify="true"
               netlify-honeypot="bot-field"
-              onSubmit={handleSubmit} 
+              onSubmit={handleSubmit}
               className="space-y-6"
             >
               <input type="hidden" name="form-name" value="contact" />
@@ -75,9 +79,9 @@ const ContactSection = () => {
 
               <Button type="submit" variant="default" size="lg" className="w-full rounded-full" disabled={isSubmitting}>
                 {isSubmitting ? "Sending..." : <>
-                    <Send className="w-4 h-4" />
-                    Send message
-                  </>}
+                  <Send className="w-4 h-4" />
+                  Send message
+                </>}
               </Button>
             </form>
           </div>
@@ -116,6 +120,8 @@ const ContactSection = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default ContactSection;
