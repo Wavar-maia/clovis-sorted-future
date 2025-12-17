@@ -78,8 +78,8 @@ const HeroSection = () => {
             We use advanced AI to sort post-consumer textiles at unprecedented speed and precision, unlocking supply of high quality feedstock for reuse and recycling.
           </p>
 
-          {/* CTA Button */}
-          <div className="animate-fade-up-delay" style={{ animationDelay: "0.4s" }}>
+          {/* CTA Buttons */}
+          <div className="animate-fade-up-delay flex gap-4" style={{ animationDelay: "0.4s" }}>
             <Button 
               variant="default" 
               size="lg" 
@@ -87,6 +87,14 @@ const HeroSection = () => {
               className="rounded-full px-8"
             >
               Discover how
+            </Button>
+            <Button 
+              variant="outline" 
+              size="lg" 
+              onClick={() => scrollToSection("contact")}
+              className="rounded-full px-8 bg-background text-foreground border-foreground hover:bg-foreground hover:text-background"
+            >
+              Contact us
             </Button>
           </div>
         </div>
