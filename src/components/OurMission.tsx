@@ -11,15 +11,32 @@ const missionCards = [{
   description: "Every piece of textile that comes through our system finds its highest-value destination. Nothing is wasted, everything is optimized."
 }];
 
-// Purple/pink/peach painterly style
-const paintBrushStyle = `
-  radial-gradient(ellipse 75% 65% at 30% 20%, hsl(280 30% 45%) 0%, transparent 50%),
-  radial-gradient(ellipse 65% 75% at 70% 75%, hsl(340 40% 60%) 0%, transparent 55%),
-  radial-gradient(ellipse 80% 60% at 50% 85%, hsl(25 45% 75%) 0%, transparent 45%),
-  radial-gradient(ellipse 55% 45% at 10% 60%, hsl(260 25% 40%) 0%, transparent 40%),
-  radial-gradient(ellipse 45% 50% at 90% 25%, hsl(15 50% 70%) 0%, transparent 35%),
-  linear-gradient(155deg, hsl(270 30% 40%) 0%, hsl(330 35% 55%) 50%, hsl(20 40% 70%) 100%)
-`;
+// Different color palettes for each card
+const paintBrushStyles = [
+  // Card 1: Purple/pink/peach painterly style (original)
+  `radial-gradient(ellipse 75% 65% at 30% 20%, hsl(280 30% 45%) 0%, transparent 50%),
+   radial-gradient(ellipse 65% 75% at 70% 75%, hsl(340 40% 60%) 0%, transparent 55%),
+   radial-gradient(ellipse 80% 60% at 50% 85%, hsl(25 45% 75%) 0%, transparent 45%),
+   radial-gradient(ellipse 55% 45% at 10% 60%, hsl(260 25% 40%) 0%, transparent 40%),
+   radial-gradient(ellipse 45% 50% at 90% 25%, hsl(15 50% 70%) 0%, transparent 35%),
+   linear-gradient(155deg, hsl(270 30% 40%) 0%, hsl(330 35% 55%) 50%, hsl(20 40% 70%) 100%)`,
+  
+  // Card 2: Ocean blue/teal/mint
+  `radial-gradient(ellipse 75% 65% at 30% 20%, hsl(200 45% 40%) 0%, transparent 50%),
+   radial-gradient(ellipse 65% 75% at 70% 75%, hsl(175 50% 50%) 0%, transparent 55%),
+   radial-gradient(ellipse 80% 60% at 50% 85%, hsl(160 40% 70%) 0%, transparent 45%),
+   radial-gradient(ellipse 55% 45% at 10% 60%, hsl(210 40% 35%) 0%, transparent 40%),
+   radial-gradient(ellipse 45% 50% at 90% 25%, hsl(150 45% 65%) 0%, transparent 35%),
+   linear-gradient(155deg, hsl(205 40% 35%) 0%, hsl(180 45% 45%) 50%, hsl(155 35% 65%) 100%)`,
+  
+  // Card 3: Sunset orange/coral/gold
+  `radial-gradient(ellipse 75% 65% at 30% 20%, hsl(25 50% 50%) 0%, transparent 50%),
+   radial-gradient(ellipse 65% 75% at 70% 75%, hsl(10 55% 55%) 0%, transparent 55%),
+   radial-gradient(ellipse 80% 60% at 50% 85%, hsl(45 50% 70%) 0%, transparent 45%),
+   radial-gradient(ellipse 55% 45% at 10% 60%, hsl(15 45% 40%) 0%, transparent 40%),
+   radial-gradient(ellipse 45% 50% at 90% 25%, hsl(35 55% 65%) 0%, transparent 35%),
+   linear-gradient(155deg, hsl(20 45% 45%) 0%, hsl(5 50% 50%) 50%, hsl(40 45% 65%) 100%)`
+];
 const OurMission = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const goToPrevious = () => {
@@ -65,7 +82,7 @@ const OurMission = () => {
               opacity = 0.4;
             }
             return <div key={index} className="absolute inset-0 rounded-3xl overflow-hidden transition-all duration-500 ease-out" style={{
-              background: paintBrushStyle,
+              background: paintBrushStyles[index],
               transform,
               zIndex,
               opacity
