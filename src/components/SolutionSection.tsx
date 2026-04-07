@@ -44,9 +44,9 @@ const SolutionSection = () => {
 
         <div className="grid md:grid-cols-2 gap-px bg-border max-w-5xl mx-auto border border-border rounded-2xl overflow-hidden">
           {useCases.map((uc, i) => (
-            <div key={i} className="bg-card p-8 md:p-10">
+            <div key={i} className="bg-card p-6 md:p-8 flex flex-col">
               {/* Visual mock */}
-              <div className="bg-background border border-border rounded-xl p-6 mb-8 min-h-[220px] flex flex-col justify-center">
+              <div className="bg-background border border-border rounded-xl p-5 mb-6 min-h-[180px] flex flex-col justify-center">
                 {i === 0 ? (
                   <div>
                     <div className="text-primary/40 text-2xl mb-1">#</div>
