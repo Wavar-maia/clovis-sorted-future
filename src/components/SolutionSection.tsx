@@ -31,13 +31,13 @@ const useCases = [
 
 const SolutionSection = () => {
   return (
-    <section id="solution" className="py-24 md:py-32">
+    <section id="solution" className="py-16 md:py-24">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="max-w-4xl mx-auto text-center mb-20">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight text-foreground">
+        <div className="max-w-4xl mx-auto text-center mb-12">
+          <h2 className="text-2xl md:text-4xl font-bold mb-4 leading-tight text-foreground">
             Une automatisation conçue pour votre workflow
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base text-muted-foreground max-w-2xl mx-auto">
             Commencez par un cas d'usage ou déployez la plateforme complète. Tout se connecte à vos systèmes existants.
           </p>
         </div>
