@@ -28,23 +28,23 @@ const features = [
 
 const WhyClovisSection = () => {
   return (
-    <section id="why-clovis" className="py-24 md:py-32">
+    <section id="why-clovis" className="py-16 md:py-24">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="max-w-4xl mx-auto text-center mb-16">
-          <span className="text-primary font-semibold text-sm uppercase tracking-[0.2em] mb-6 block">
+        <div className="max-w-4xl mx-auto text-center mb-12">
+          <span className="text-primary font-semibold text-sm uppercase tracking-[0.2em] mb-4 block">
             Pourquoi Clovis
           </span>
-          <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight text-foreground">
+          <h2 className="text-2xl md:text-4xl font-bold mb-4 leading-tight text-foreground">
             Une plateforme différente
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base text-muted-foreground max-w-2xl mx-auto">
             La plupart des outils d'automatisation nécessitent des mois de mise en place et cassent dès qu'un format change. Clovis est conçu pour comprendre, pas pour faire du matching.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-px bg-border max-w-5xl mx-auto border border-border rounded-2xl overflow-hidden">
           {features.map((feature, i) => (
-            <div key={i} className="bg-card p-8 md:p-10">
+            <div key={i} className="bg-card p-6 md:p-8">
               <span className="text-muted-foreground/50 text-sm font-medium mb-4 block">
                 {feature.number}
               </span>

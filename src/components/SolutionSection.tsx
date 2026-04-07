@@ -31,22 +31,22 @@ const useCases = [
 
 const SolutionSection = () => {
   return (
-    <section id="solution" className="py-24 md:py-32">
+    <section id="solution" className="py-16 md:py-24">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="max-w-4xl mx-auto text-center mb-20">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight text-foreground">
+        <div className="max-w-4xl mx-auto text-center mb-12">
+          <h2 className="text-2xl md:text-4xl font-bold mb-4 leading-tight text-foreground">
             Une automatisation conçue pour votre workflow
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base text-muted-foreground max-w-2xl mx-auto">
             Commencez par un cas d'usage ou déployez la plateforme complète. Tout se connecte à vos systèmes existants.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-px bg-border max-w-5xl mx-auto border border-border rounded-2xl overflow-hidden">
           {useCases.map((uc, i) => (
-            <div key={i} className="bg-card p-8 md:p-10">
+            <div key={i} className="bg-card p-6 md:p-8 flex flex-col">
               {/* Visual mock */}
-              <div className="bg-background border border-border rounded-xl p-6 mb-8 min-h-[220px] flex flex-col justify-center">
+              <div className="bg-background border border-border rounded-xl p-5 mb-6 min-h-[180px] flex flex-col justify-center">
                 {i === 0 ? (
                   <div>
                     <div className="text-primary/40 text-2xl mb-1">#</div>
@@ -84,8 +84,8 @@ const SolutionSection = () => {
                 )}
               </div>
 
-              <h3 className="text-xl font-bold text-foreground mb-3">{uc.title}</h3>
-              <p className="text-muted-foreground leading-relaxed">{uc.description}</p>
+              <h3 className="text-lg font-bold text-foreground mb-2">{uc.title}</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed flex-1">{uc.description}</p>
             </div>
           ))}
         </div>
