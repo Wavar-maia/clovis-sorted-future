@@ -9,10 +9,10 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="min-h-[85vh] flex items-center justify-center pt-20">
+    <section className="min-h-[70vh] flex items-center justify-center pt-20">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 animate-fade-up leading-[1.1] tracking-tight text-foreground">
+        <div className="max-w-3xl mx-auto text-center">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 animate-fade-up leading-[1.1] tracking-tight text-foreground">
             Vos commerciaux devraient vendre, pas saisir des données.
           </h1>
 

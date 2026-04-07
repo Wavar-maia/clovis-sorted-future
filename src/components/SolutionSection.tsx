@@ -84,8 +84,8 @@ const SolutionSection = () => {
                 )}
               </div>
 
-              <h3 className="text-xl font-bold text-foreground mb-3">{uc.title}</h3>
-              <p className="text-muted-foreground leading-relaxed">{uc.description}</p>
+              <h3 className="text-lg font-bold text-foreground mb-2">{uc.title}</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed flex-1">{uc.description}</p>
             </div>
           ))}
         </div>

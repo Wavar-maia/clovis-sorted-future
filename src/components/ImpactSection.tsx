@@ -40,8 +40,8 @@ const ImpactSection = () => {
 
         <div className="grid md:grid-cols-3 gap-px bg-border max-w-5xl mx-auto border border-border rounded-2xl overflow-hidden">
           {stats.map((stat, i) => (
-            <div key={i} className="bg-card p-8 md:p-10 text-center">
-              <div className="text-5xl md:text-6xl font-bold text-foreground mb-4">
+            <div key={i} className="bg-card p-6 md:p-8 text-center">
+              <div className="text-4xl md:text-5xl font-bold text-foreground mb-3">
                 {stat.value}
               </div>
               <div className="text-lg font-bold text-foreground mb-3">

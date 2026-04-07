@@ -44,7 +44,7 @@ const WhyClovisSection = () => {
 
         <div className="grid md:grid-cols-2 gap-px bg-border max-w-5xl mx-auto border border-border rounded-2xl overflow-hidden">
           {features.map((feature, i) => (
-            <div key={i} className="bg-card p-8 md:p-10">
+            <div key={i} className="bg-card p-6 md:p-8">
               <span className="text-muted-foreground/50 text-sm font-medium mb-4 block">
                 {feature.number}
               </span>
