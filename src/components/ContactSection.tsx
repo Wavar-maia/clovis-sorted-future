@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Send, MapPin } from "lucide-react";
+import { Send } from "lucide-react";
 import { useState, FormEvent } from "react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -61,7 +61,7 @@ const ContactSection = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
+        <div className="max-w-xl mx-auto">
           <div className="bg-card rounded-2xl p-8 md:p-10 shadow-card border border-border/50">
             <h3 className="text-xl font-semibold mb-6 text-center">
               Envoyer un message
@@ -130,42 +130,6 @@ const ContactSection = () => {
                 )}
               </Button>
             </form>
-          </div>
-
-          <div className="flex flex-col justify-center">
-            <div className="bg-card rounded-2xl p-8 md:p-10 shadow-card border border-border/50">
-              <h3 className="text-xl font-semibold mb-6 text-center">
-                Contactez-nous directement
-              </h3>
-              <p className="text-muted-foreground text-center mb-8">
-                Nous sommes toujours disponibles pour discuter d'automatisation, de vos processus commerciaux ou de partenariats potentiels.
-              </p>
-
-              <div className="space-y-4">
-                <a
-                  href="mailto:louisreungoat@clovis-ai.com"
-                  className="flex items-center gap-4 p-4 rounded-xl bg-background border border-border/50 hover:border-border transition-colors"
-                >
-                  <div className="w-12 h-12 rounded-xl bg-muted flex items-center justify-center">
-                    <Mail className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <div className="text-sm text-muted-foreground">Écrivez-nous à</div>
-                    <div className="font-semibold">louisreungoat@clovis-ai.com</div>
-                  </div>
-                </a>
-
-                <div className="flex items-center gap-4 p-4 rounded-xl bg-background border border-border/50">
-                  <div className="w-12 h-12 rounded-xl bg-muted flex items-center justify-center">
-                    <MapPin className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <div className="text-sm text-muted-foreground">Basés à</div>
-                    <div className="font-semibold">Paris, France</div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
